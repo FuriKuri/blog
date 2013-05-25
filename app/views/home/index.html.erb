@@ -1,6 +1,9 @@
 <h1>Home</h1>
 <p>Find me in app/views/home/index.html.erb</p>
-
+<a href="#" data-toggle="tooltip" title="first tooltip" id="example">hover over me</a>
+<script>
+    $('#example').tooltip()
+</script>
 <% @posts.each do |post| %>
     <div>
       <h2><%= post.title %></h2>
